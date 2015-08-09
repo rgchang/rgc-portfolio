@@ -1,0 +1,750 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  cursor: default;
+  margin: 0;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  width: 55%;
+  margin: 0 auto;
+}
+
+button {
+  margin-top: 30px;
+  padding: 14px 22px;
+  outline: none;
+  letter-spacing: 3px;
+  font-size: 16px;
+  transition: .3s ease-out;
+  font-weight: 700;
+  font-family: 'poiret one';
+}
+button:hover {
+  cursor: pointer;
+}
+
+section {
+  width: 98.9vw;
+  height: 70vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'poiret one';
+}
+
+.icons {
+  margin-bottom: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.icons a {
+  border: 4px solid #332e2e;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #332e2e;
+  transition: .3s ease-out;
+}
+.icons a:hover {
+  background-color: #02b2de;
+  color: #f8f7f7;
+  border: 4px solid #02b2de;
+}
+.icons a i {
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.header .list li {
+  list-style: none;
+}
+.header .list li a {
+  text-decoration: none;
+  margin: 10px 30px;
+  color: #f03838;
+  font-family: 'poiret one';
+  font-size: 17px;
+  transition: .3s ease-out;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.header .list li a:hover {
+  color: #02b2de;
+}
+.header .list li:nth-of-type(1) {
+  border-bottom: 5px solid grey;
+}
+.header .list li:nth-of-type(2) {
+  border-bottom: 5px solid #02b2de;
+}
+.header .list li:nth-of-type(3) {
+  border-bottom: 5px solid #b93131;
+}
+.header .list li:nth-of-type(4) {
+  border-bottom: 5px solid #332e2e;
+}
+
+body {
+  background-color: #f8f7f7;
+}
+body header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body header h1 {
+  font-family: 'cookie';
+  font-size: 100px;
+  padding: 20px 40px;
+  border-top: none;
+  color: #f03838;
+  text-shadow: 2px 3px lightgrey;
+  font-weight: 100;
+}
+body header nav:first-of-type {
+  width: 98.9vw;
+}
+body header nav:first-of-type ul {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header nav:first-of-type ul li {
+  list-style: none;
+  color: grey;
+  cursor: default;
+}
+body header nav:first-of-type ul div {
+  background-color: #02b2de;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 0 5px #332e2e;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+body header nav:first-of-type ul div div {
+  border: 1px solid white;
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  margin: 8px 0 0 10px;
+  border-radius: 50%;
+}
+body header nav:first-of-type ul div h2 {
+  color: white;
+  font-size: 20px;
+  font-family: 'poiret one';
+  letter-spacing: 7px;
+  padding: 0 20px 20px 40px;
+  text-shadow: 0 0 10px #332e2e;
+}
+body header nav:first-of-type ul div h2 .upper {
+  font-weight: 900;
+}
+body header nav:first-of-type ul .medium {
+  font-size: 30px;
+  color: #02b2de;
+}
+body header nav:first-of-type ul .large {
+  font-size: 45px;
+  color: #f03838;
+}
+body header nav:first-of-type ul .xl {
+  font-size: 75px;
+}
+body header button {
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 1px #332e2e;
+  padding: 1px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  outline: none;
+  height: 40px;
+  position: absolute;
+  top: -16px;
+  right: 10px;
+}
+body header button p {
+  border: 1px solid #332e2e;
+  width: 25px;
+  margin: 6.5px;
+  transition: .3s ease-out;
+}
+body header button:hover p:nth-of-type(1) {
+  margin: 0 0 0 6px;
+}
+body header button:hover p:nth-of-type(2) {
+  margin: 8px 0 10px 6px;
+}
+body header button:hover p:nth-of-type(3) {
+  margin: 8px 7px 0 6px;
+}
+body header #navi {
+  overflow: hidden;
+  margin: 60px 0 40px;
+}
+body header #navi .list li {
+  list-style: none;
+}
+body header #navi .list li a {
+  text-decoration: none;
+  margin: 10px 30px;
+  color: #f03838;
+  font-family: 'poiret one';
+  font-size: 17px;
+  transition: .3s ease-out;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+body header #navi .list li a:hover {
+  color: #02b2de;
+}
+body header #navi .list li:nth-of-type(1) {
+  border-bottom: 5px solid grey;
+}
+body header #navi .list li:nth-of-type(2) {
+  border-bottom: 5px solid #02b2de;
+}
+body header #navi .list li:nth-of-type(3) {
+  border-bottom: 5px solid #b93131;
+}
+body header #navi .list li:nth-of-type(4) {
+  border-bottom: 5px solid #332e2e;
+}
+body main #about-me {
+  background-color: #332e2e;
+}
+body main #about-me h3 {
+  font-size: 55px;
+  color: white;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 2px #b93131;
+}
+body main #about-me h3:nth-of-type(1) {
+  margin: 0 0 10px;
+}
+body main #about-me h3:nth-of-type(1) span#end {
+  font-size: 50px;
+  border-top: 10px solid #02b2de;
+  border-bottom: 10px solid #02b2de;
+  font-family: 'cookie';
+  letter-spacing: 7px;
+  color: #b93131;
+  font-weight: 700;
+  text-shadow: none;
+}
+body main #about-me p {
+  color: #02b2de;
+  font-size: 28px;
+  margin-top: 50px;
+  letter-spacing: 5px;
+  font-family: 'cookie';
+}
+body main #about-me button {
+  background-color: #332e2e;
+  border: 3px solid white;
+  color: white;
+}
+body main #about-me button:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  color: white;
+}
+body main #portfolio {
+  background-color: #b93131;
+}
+body main #portfolio #icon {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main #portfolio #icon i {
+  color: white;
+  font-size: 300px;
+  text-shadow: 1px 3px 5px #332e2e;
+}
+body main #portfolio #icon h3 {
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 31px;
+}
+body main #portfolio #icon .amazing {
+  color: #02b2de;
+  font-family: 'cookie';
+  font-size: 60px;
+  letter-spacing: 4px;
+  text-shadow: 1px 2px #332e2e;
+}
+body main #portfolio h4 {
+  margin-top: 30px;
+  color: white;
+  font-size: 26px;
+}
+body main #portfolio h4 i {
+  font-size: 33px;
+}
+body main #contact {
+  height: 80vh;
+}
+body main #contact h3 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #332e2e;
+}
+body main #contact button {
+  color: #332e2e;
+  margin-top: 50px;
+  background-color: #f8f7f7;
+  border: 3px solid #332e2e;
+}
+body main #contact button:hover {
+  background-color: #332e2e;
+  color: #f8f7f7;
+}
+body main #contact hr {
+  border: 1px solid #332e2e;
+  width: 55%;
+  margin: 50px 0 40px;
+}
+body main #contact h4 {
+  margin: 0 0 30px;
+}
+body main #contact #a {
+  margin-top: 17px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #332e2e;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#body-contact {
+  font-family: 'poiret one';
+  background-color: #9b4646;
+}
+#body-contact h1 {
+  color: #f8f7f7;
+  text-shadow: 2px 2px grey;
+  font-size: 115px;
+}
+#body-contact a, #body-contact p {
+  color: #f8f7f7;
+  letter-spacing: 2px;
+}
+#body-contact li {
+  padding: 8px 0;
+}
+#body-contact li a:hover {
+  color: #f47566;
+}
+#body-contact li:nth-of-type(4) {
+  background-color: white;
+}
+#body-contact li:nth-of-type(4) a {
+  color: #f47566;
+}
+#body-contact h4 {
+  font-size: 26px;
+  color: #f8f7f7;
+}
+#body-contact #contact-head {
+  text-align: center;
+  margin-top: 30px;
+}
+#body-contact #contact-head h4 {
+  margin: 40px 0 20px;
+}
+#body-contact #contact-head h4:last-of-type {
+  margin: 0 0 50px;
+}
+#body-contact textarea, #body-contact input, #body-contact button {
+  box-shadow: 1px 1px lightgrey;
+}
+#body-contact #main-contact {
+  width: 100%;
+}
+#body-contact #main-contact #contact {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+#body-contact #main-contact #contact #container {
+  width: 485px;
+}
+#body-contact #main-contact #contact #container div:nth-of-type(1), #body-contact #main-contact #contact #container div:nth-of-type(2) {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#body-contact #main-contact #contact #container .form-group, #body-contact #main-contact #contact #container label {
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #f8f7f7;
+}
+#body-contact #main-contact #contact #container textarea {
+  width: 95%;
+  height: 200px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-top: 15px;
+}
+#body-contact #main-contact #contact #container label {
+  font-weight: 900;
+}
+#body-contact #main-contact #contact #container input {
+  border-color: #a8a8a8;
+  padding: 8px 0 8px 8px;
+}
+#body-contact #main-contact #contact #container #btn {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 50px;
+}
+#body-contact #main-contact #contact #container #btn button {
+  margin-top: 20px;
+  border: 1px solid #a8a8a8;
+  color: #f47566;
+  font-weight: 900;
+  padding: 10px 18px;
+}
+#body-contact #main-contact #contact #container #btn button:hover {
+  color: #f8f7f7;
+  border: 1px solid #f47566;
+  background-color: #f47566;
+}
+#body-contact #main-contact #contact #info {
+  margin-left: 80px;
+}
+#body-contact #main-contact #contact #info h4 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+#body-contact #main-contact #contact #info i {
+  font-size: 20px;
+  color: #f47566;
+  margin-right: 30px;
+}
+#body-contact #main-contact #contact #info div:nth-of-type(1), #body-contact #main-contact #contact #info div:nth-of-type(2), #body-contact #main-contact #contact #info div:nth-of-type(3) {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+#body-contact #main-contact #contact #info div:nth-of-type(1) {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+#body-contact #main-contact #contact #info div:nth-of-type(1) p {
+  margin-left: 10px;
+}
+#body-contact #main-contact #contact #info div:nth-of-type(2) a {
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+#body-contact #main-contact #contact #info div:nth-of-type(3) {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0 30px;
+}
+#body-contact #main-contact #contact #info .icons a {
+  border-radius: 0;
+  border-color: #f8f7f7;
+  margin: 0 20px 0 0;
+}
+#body-contact #main-contact #contact #info .icons a:hover {
+  color: white;
+  border-color: #f47566;
+  background-color: #f47566;
+}
+#body-contact #main-contact #contact #info .icons a:hover i {
+  color: white;
+}
+#body-contact #main-contact #contact #info .icons a i {
+  font-size: 18px;
+  padding-left: 20px;
+  color: #f8f7f7;
+}
+
+.hide {
+  height: 0px;
+  transition: height 1s;
+}
+
+.show {
+  height: 20px;
+  transition: height 1s;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    height: 55vh;
+  }
+
+  body header h1 {
+    font-size: 70px;
+    padding: 10px 0 0;
+  }
+  body header nav:first-of-type .list li {
+    display: none;
+  }
+  body header nav:first-of-type .list div {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    position: absolute;
+    top: 2px;
+    left: 10px;
+  }
+  body header nav:first-of-type .list div div {
+    border: 0;
+    height: 0;
+    width: 0;
+  }
+  body header nav:first-of-type .list div h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'poiret one';
+    padding: 0 5px 5px;
+  }
+  body header nav:first-of-type .list div h2 .upper {
+    font-weight: 900;
+  }
+  body header #navi {
+    margin: 40px 0 20px;
+  }
+  body header #navi .list li {
+    padding: 0;
+  }
+  body header #navi .list li a {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  body main:first-of-type #about-me h3 {
+    font-size: 35px;
+  }
+  body main:first-of-type #about-me h3:nth-of-type(1) {
+    margin: 20px 0 10px;
+  }
+  body main:first-of-type #about-me h3:nth-of-type(1) span#end {
+    font-size: 47px;
+    border-top: 8px solid #02b2de;
+    border-bottom: 8px solid #02b2de;
+  }
+  body main:first-of-type #about-me p {
+    font-size: 23px;
+  }
+  body main:first-of-type #about-me button {
+    font-size: 13px;
+  }
+  body main:first-of-type #portfolio #icon i {
+    font-size: 180px;
+  }
+  body main:first-of-type #portfolio #icon h3 {
+    font-size: 22px;
+  }
+  body main:first-of-type #portfolio #icon .amazing {
+    font-size: 37px;
+  }
+  body main:first-of-type #portfolio h4 {
+    font-size: 18px;
+  }
+  body main:first-of-type #portfolio h4 i {
+    font-size: 20px;
+  }
+  body main:first-of-type #contact {
+    height: 68vh;
+  }
+  body main:first-of-type #contact h3 {
+    font-size: 35px;
+  }
+  body main:first-of-type #contact a button {
+    font-size: 15px;
+    margin-top: 35px;
+    padding: 7px 15px;
+  }
+  body main:first-of-type #contact hr {
+    margin: 40px 0 30px;
+  }
+  body main:first-of-type #contact h4 {
+    font-size: 23px;
+    margin-top: 10px;
+  }
+  body main:first-of-type #contact #icons a i {
+    font-size: 23px;
+  }
+  body main:first-of-type #contact #a {
+    margin-top: 10px;
+  }
+
+  #body-contact {
+    padding: 40px 0 100px;
+  }
+  #body-contact h1 {
+    font-size: 70px;
+  }
+  #body-contact header .list {
+    margin-top: 20px;
+  }
+  #body-contact header .list li a {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  #body-contact #main-contact #contact #container {
+    width: 80%;
+  }
+  #body-contact #main-contact #contact #container label {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 768px) {
+  #navButton {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  section {
+    height: 45vh;
+  }
+
+  body {
+    margin-top: 64px;
+  }
+  body header h1 {
+    display: none;
+  }
+  body header #navi {
+    margin: 40px 0 20px;
+  }
+  body header #navi .list li {
+    padding: 0;
+  }
+  body header #navi .list li a {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+  body header #logo {
+    display: none;
+  }
+  body main:first-of-type #about-me h3 {
+    font-size: 27px;
+  }
+  body main:first-of-type #about-me h3:nth-of-type(1) span#end {
+    font-size: 38px;
+  }
+  body main:first-of-type #about-me p {
+    font-size: 18px;
+  }
+  body main:first-of-type #about-me button {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+  body main:first-of-type #portfolio #icon i {
+    font-size: 130px;
+    margin-left: 20px;
+  }
+  body main:first-of-type #portfolio #icon h3 {
+    font-size: 16px;
+  }
+  body main:first-of-type #portfolio #icon .amazing {
+    font-size: 28px;
+  }
+  body main:first-of-type #portfolio button {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+  body main:first-of-type #contact {
+    height: 58vh;
+  }
+  body main:first-of-type #contact h3 {
+    font-size: 28px;
+  }
+  body main:first-of-type #contact a button {
+    font-size: 15px;
+    margin-top: 35px;
+    padding: 5px 12px;
+  }
+  body main:first-of-type #contact h4 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  #body-contact #main-contact #contact #container #btn {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
