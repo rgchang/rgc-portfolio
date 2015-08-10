@@ -355,6 +355,122 @@ body {
 		}
 	}
 }
+#body-me {
+	background-color: $black;
+	h1 {
+		color: $blue;
+		text-shadow: 2px 3px $lightgrey;
+	}
+	.list {
+		li:nth-of-type(2) {
+			background-color: $lightgrey;
+			a {
+				color: $black;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+		li:nth-of-type(4) {
+			border-bottom-color: $lightgrey;
+		}
+		li {
+			padding: 8px 0;
+			a {
+				color: $blue;
+				&:hover {
+					color: $lightgrey;
+				}
+			}
+		}
+	}
+	#main-me {
+		font-family: 'poiret one';
+		margin-top: 18px;
+		li, p {
+			font-size: 18px;
+			letter-spacing: 1px;
+			font-weight: 700;
+		}
+		#img-me {
+			height: 70vh;
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			#img {
+				h3 {
+					text-align: center;
+					color: $lightgrey;
+					font-size: 30px;
+					font-family: 'cookie';
+					letter-spacing: 2px;
+					margin: 0 50px 15px 0;
+					color: $blue;
+				}
+				img {
+					margin-right: 50px;
+					border: 3px solid $lightgrey;
+				}
+			}
+			#list1 {
+				border-left: 2px solid $blue;
+				padding-left: 50px;
+				height: 450px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 40%;
+				animation: flash linear 5s;
+				animation-timing-function: steps end;
+				@keyframes flash {
+					0% { border-left: 2px solid $blue;
+						height: 0;}
+					50% { border-left: 2px solid $blue;
+						height: 450px;}
+				}
+				li {
+					list-style: none;
+					margin: 10px 0;
+					color: $lightgrey;
+					animation: lettering linear 5s;
+					animation-timing-function: steps-end;
+					@keyframes lettering {
+						0% { margin: -10px 0;}
+						50% {margin: 10px 0;}
+					}
+					a {
+						color: $blue;
+						font-size: 20px;
+					}
+				}
+			}
+			#skills {
+				display: flex;
+				flex-direction: column;
+				margin: 10px 0 0 50px;
+				div {
+					color: $lightgrey;
+					padding: 10px;
+					p {
+						color: $lightgrey;
+						text-align: center;
+						margin: 8px 0;
+					}
+				}
+				div:nth-of-type(1) {
+					background-color: $blue;
+				}
+				div:nth-of-type(2) {
+					background-color: $orange;
+				}
+				div:nth-of-type(3) {
+					background-color: grey;
+				}
+			}
+		}
+	}
+}
 
 #body-contact {
 	font-family: 'poiret one';
@@ -362,7 +478,6 @@ body {
 	h1 {
 		color: $lightgrey;
 		text-shadow: 2px 2px grey;
-		font-size: 115px;
 	}
 	a, p {
 		color: $lightgrey;
@@ -375,7 +490,7 @@ body {
 		}
 	}
 	li:nth-of-type(4) {
-		background-color: white;
+		background-color: $lightgrey;
 		a {
 			color: $pink;
 		}
@@ -395,7 +510,7 @@ body {
 		}
 	}
 	textarea, input, button {
-		box-shadow: 1px 1px lightgrey;
+		box-shadow: 2px 2px grey;
 	}
 	#main-contact {
 		width: 100%;
