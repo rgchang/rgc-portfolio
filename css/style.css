@@ -93,11 +93,7 @@ section {
   margin: 0 10px;
 }
 
-.header .list li {
-  list-style: none;
-}
 .header .list li a {
-  text-decoration: none;
   margin: 10px 30px;
   color: #f03838;
   font-family: 'poiret one';
@@ -121,6 +117,14 @@ section {
 }
 .header .list li:nth-of-type(4) {
   border-bottom: 5px solid #332e2e;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -161,7 +165,6 @@ body header nav:first-of-type ul {
           justify-content: space-between;
 }
 body header nav:first-of-type ul li {
-  list-style: none;
   color: grey;
   cursor: default;
 }
@@ -235,11 +238,7 @@ body header #navi {
   overflow: hidden;
   margin: 60px 0 40px;
 }
-body header #navi .list li {
-  list-style: none;
-}
 body header #navi .list li a {
-  text-decoration: none;
   margin: 10px 30px;
   color: #f03838;
   font-family: 'poiret one';
@@ -368,7 +367,6 @@ body main #contact h4 {
 }
 body main #contact #a {
   margin-top: 17px;
-  text-decoration: none;
   font-size: 17px;
   color: #332e2e;
   font-weight: 700;
@@ -478,7 +476,6 @@ body main #contact #a {
   }
 }
 #body-me #main-me #img-me #list1 li {
-  list-style: none;
   margin: 10px 0;
   color: #f8f7f7;
   -webkit-animation: lettering linear 5s;
@@ -665,7 +662,6 @@ body main #contact #a {
   margin-left: 10px;
 }
 #body-contact #main-contact #contact #info div:nth-of-type(2) a {
-  text-decoration: none;
   letter-spacing: 2px;
 }
 #body-contact #main-contact #contact #info div:nth-of-type(3) {

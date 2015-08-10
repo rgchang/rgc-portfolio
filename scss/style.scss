@@ -83,38 +83,40 @@ section {
 	}
 }
 
-.header {
-	.list {
-		li {
-			list-style: none;
-			a {
-				text-decoration: none;
-				margin: 10px 30px;
-				color: $orange;
-				font-family: 'poiret one';
-				font-size: 17px;
-				transition: .3s ease-out;
-				text-transform: uppercase;
-				font-weight: 700;
-				letter-spacing: 2px;
-				&:hover {
-					color: $blue;
-				}
-			}
-		}
-		li:nth-of-type(1) {
-			border-bottom: 5px solid grey;
-		}
-		li:nth-of-type(2) {
-			border-bottom: 5px solid $blue;
-		}
-		li:nth-of-type(3) {
-			border-bottom: 5px solid $red;
-		}
-		li:nth-of-type(4) {
-			border-bottom: 5px solid $black;
+.header .list {
+	li a {
+		margin: 10px 30px;
+		color: $orange;
+		font-family: 'poiret one';
+		font-size: 17px;
+		transition: .3s ease-out;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 2px;
+		&:hover {
+			color: $blue;
 		}
 	}
+	li:nth-of-type(1) {
+		border-bottom: 5px solid grey;
+	}
+	li:nth-of-type(2) {
+		border-bottom: 5px solid $blue;
+	}
+	li:nth-of-type(3) {
+		border-bottom: 5px solid $red;
+	}
+	li:nth-of-type(4) {
+		border-bottom: 5px solid $black;
+	}
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
 }
 
 body {
@@ -139,7 +141,6 @@ body {
 				align-items: center;
 				justify-content: space-between;
 				li {
-					list-style: none;
 					color: grey;
 					cursor: default;
 				}
@@ -214,21 +215,17 @@ body {
 			overflow: hidden;
 			margin: 60px 0 40px;
 			.list {
-				li {
-					list-style: none;
-					a {
-						text-decoration: none;
-						margin: 10px 30px;
-						color: $orange;
-						font-family: 'poiret one';
-						font-size: 17px;
-						transition: .3s ease-out;
-						text-transform: uppercase;
-						font-weight: 700;
-						letter-spacing: 2px;
-						&:hover {
-							color: $blue;
-						}
+				li a {
+					margin: 10px 30px;
+					color: $orange;
+					font-family: 'poiret one';
+					font-size: 17px;
+					transition: .3s ease-out;
+					text-transform: uppercase;
+					font-weight: 700;
+					letter-spacing: 2px;
+					&:hover {
+						color: $blue;
 					}
 				}
 				li:nth-of-type(1) {
@@ -346,7 +343,6 @@ body {
 			}
 			#a {
 				margin-top: 17px;
-				text-decoration: none;
 				font-size: 17px;
 				color: $black;
 				font-weight: 700;
@@ -430,7 +426,6 @@ body {
 						height: 450px;}
 				}
 				li {
-					list-style: none;
 					margin: 10px 0;
 					color: $lightgrey;
 					animation: lettering linear 5s;
@@ -584,34 +579,29 @@ body {
 						margin-left: 10px;
 					}
 				}
-				div:nth-of-type(2) {
-					a {
-						text-decoration: none;
-						letter-spacing: 2px;
-					}
+				div:nth-of-type(2) a {
+					letter-spacing: 2px;
 				}
 				div:nth-of-type(3) {
 					display: flex;
 					margin: 10px 0 30px;
 				}
-				.icons {
-					a {
-						border-radius: 0;
-						border-color: $lightgrey;
-						margin: 0 20px 0 0;
-						&:hover {
-							color: white;
-							border-color: $pink;
-							background-color: $pink;
-							i {
-								color: white;
-							}
-						}
+				.icons a {
+					border-radius: 0;
+					border-color: $lightgrey;
+					margin: 0 20px 0 0;
+					&:hover {
+						color: white;
+						border-color: $pink;
+						background-color: $pink;
 						i {
-							font-size: 18px;
-							padding-left: 20px;
-							color: $lightgrey;
+							color: white;
 						}
+					}
+					i {
+						font-size: 18px;
+						padding-left: 20px;
+						color: $lightgrey;
 					}
 				}
 			}
