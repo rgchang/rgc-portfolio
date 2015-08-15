@@ -10,7 +10,7 @@ $red: hsla(0, 58%, 46%, 1);
 $orange: hsla(0, 86%, 58%, 1);
 $blue: hsla(192, 98%, 44%, 1);
 $lightgrey: hsla(0, 7%, 97%, 1);
-$pink: hsla(6, 87%, 68%, 1);
+$pink: hsla(6, 100%, 74%, 1);
 
 h1, h2, h3, h4 {
 	cursor: default;
@@ -469,10 +469,10 @@ body {
 
 #body-contact {
 	font-family: 'poiret one';
-	background-color: hsl(0, 38%, 44%);
+	background-color: hsla(0, 52%, 55%, 1);
 	h1 {
 		color: $lightgrey;
-		text-shadow: 2px 2px grey;
+		text-shadow: 2px 3px $pink;
 	}
 	a, p {
 		color: $lightgrey;
@@ -505,7 +505,8 @@ body {
 		}
 	}
 	textarea, input, button {
-		box-shadow: 2px 2px grey;
+		border: none;
+		box-shadow: 2px 2px $pink;
 	}
 	#main-contact {
 		width: 100%;
